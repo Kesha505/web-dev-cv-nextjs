@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f2027;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.8) !important;
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-size: 22px;
+}
+
+.navbar .nav-link {
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #25D366 !important;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 0 0 40px rgba(37, 211, 102, 0.8);
+  transition: 0.4s;
+  z-index: 10;
+}
+
+.profile-img:hover {
+  transform: scale(1.08);
+}
+
+.intro span {
+  color: #25D366;
+  font-weight: 600;
+}
+
+/* WhatsApp Button */
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  padding: 14px 35px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+  animation: pulse 2s infinite;
+}
+
+.btn-wa:hover {
+  color: white;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 35px rgba(37, 211, 102, 1);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 15px rgba(37, 211, 102, 0.6); }
+  50% { box-shadow: 0 0 35px rgba(37, 211, 102, 1); }
+  100% { box-shadow: 0 0 15px rgba(37, 211, 102, 0.6); }
+}
+
+/* Biodata Section */
+.custom-bg-light {
+  background: #f4f6f9;
+}
+
+.biodata-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.biodata-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Experience Section */
+.custom-dark {
+  background: #1e2a38;
+}
+
+.experience-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: left;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+}
